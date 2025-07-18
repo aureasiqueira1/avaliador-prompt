@@ -265,7 +265,6 @@ export class PromptAnalyzer {
     prompt: string,
     analysis: PromptAnalysis
   ): number {
-    const length = prompt.length;
     const wordCount = prompt.split(/\s+/).length;
 
     // Critérios mais rigorosos

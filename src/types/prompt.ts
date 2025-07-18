@@ -53,3 +53,12 @@ export interface PromptComparison {
   improvementScore: number;
   keyDifferences: string[];
 }
+
+export interface PromptStatistics {
+  totalPrompts: number;
+  totalImproved: number;
+  totalPoor: number;
+  totalFair: number;
+  totalGood: number;
+  totalExcellent: number;
+}
