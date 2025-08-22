@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
 }
 
 @theme inline {
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f5f5f5;
   }
 }
 
@@ -23,4 +23,54 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Melhorar contraste dos textos */
+.text-gray-600 {
+  color: #374151 !important;
+}
+
+.text-gray-500 {
+  color: #4b5563 !important;
+}
+
+.text-gray-700 {
+  color: #1f2937 !important;
+}
+
+.text-gray-800 {
+  color: #111827 !important;
+}
+
+.text-gray-900 {
+  color: #0f172a !important;
+}
+
+/* Textos específicos do componente */
+p,
+span,
+div,
+label {
+  color: #1f2937;
+}
+
+/* Garantir que textos em cards sejam legíveis */
+.bg-gray-50 p,
+.bg-gray-50 span,
+.bg-gray-50 div {
+  color: #111827 !important;
+}
+
+/* Melhorar contraste em elementos de formulário */
+textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+/* Textos de feedback e sugestões */
+.text-sm {
+  color: #374151 !important;
+}
+
+.text-xs {
+  color: #4b5563 !important;
 }
